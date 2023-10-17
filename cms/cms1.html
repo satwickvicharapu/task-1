@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Information</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <style>
+    body{
+        background-image: url("bc.png") ;
+        height : 100vh;
+        background-position : center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card {
+    height: 60vh;
+    width : 85vh;
+    margin-left : 85px;
+    margin-top: 150px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    font-weight: bold;
+    color: #ffffff;
+    background-size: cover;
+    border-color: #cced00;
+    border-width: 8px;
+    }
+ 
+    .content{
+      font-family: Arial, sans-serif;
+      margin-left : 30px;
+      margin-top : 20px;
+      color : white;
+      display : flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .con1{
+      font-family: Arial, sans-serif;
+      margin-left : 30px;
+      margin-top : 10px;
+      color : white;
+      display : flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .con2{
+      font-family: Arial, sans-serif;
+      margin-left : 30px;
+      margin-top : 10px;
+      color : white;
+      display : flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .con3{
+      font-family: Arial, sans-serif;
+      margin-left : 30px;
+      margin-top : 10px;
+      color : white;
+      display : flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .con4{
+      font-family: Arial, sans-serif;
+      margin-left : 30px;
+      margin-top : 10px;
+      color : white;
+      display : flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .e_box1 {
+    margin-left: 25px;
+    background-color: #9aa5b1;
+    }
+    .e_box2 {
+    margin-left: 48px;
+    background-color: #9aa5b1;
+    margin-top : 5px;
+    }
+    .e_box3 {
+    margin-left: 40px;
+    background-color: #9aa5b1;
+    margin-top : 5px;
+    }
+    .e_box4 {
+    margin-left: 45px;
+    background-color: #9aa5b1;
+    margin-top : 5px;
+    }
+    .user{
+    font-family: "Roboto";
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    font-size: 26px;
+    text-decoration: none;
+    padding : 10px;
+    padding-left : 60px;
+    margin-top : 40px;
+    background-color: #cced00;
+    }
+    
+  .customise-button {
+    padding: 15px;
+    width: 120px;
+    color: #4b6cc1;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #cced00;
+    border-width: 0px;
+    border-radius: 7px;
+    margin-left : 20px;
+    margin-top: 45px;
+   }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #cced00;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #cced00;
+    }
+    image {
+        max-width: 50px;
+        margin-left : 100px;
+        height: 50px;
+        margin-top : 50px;
+        margin-bottom: 20px;
+    }
+    video {
+      margin-top : 80px;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+<center>
+<div class="card">
+    <h1 class="user">User Information</h1>
+    <div class="content">
+        <form onsubmit="submitForm(event)">
+            <div class="d-flex flex-row justify-content-center con1">
+            <label  for="Heading">Caption </label>
+            <input type="text" class="text-center e_box1"  id="Heading" placeholder="Caption of your post" required>
+            </div>
+            <div class="d-flex flex-row justify-content-center con2">
+            <label for="Body">Body </label>
+            <input type="text"  class="text-center e_box2"   id="Body" placeholder="content of your post" required>
+            </div>
+            <div class="d-flex flex-row justify-content-center con3">
+            <label for="image">Image </label>
+            <input type="text" class="text-center e_box3"   id="image" placeholder="Enter image URL">
+            </div>
+            <div class="d-flex flex-row justify-content-center con4">
+            <label for="video">Video </label>
+            <input type="text"   class="text-center e_box4" id="video" placeholder="Enter video URL">
+            </div>
+            <div>
+            <button class="qu customise-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+</center>
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      // Get the user input values
+      var nameInput = document.getElementById("Heading");
+      var emailInput = document.getElementById("Body");
+      var imageInput = document.getElementById("image");
+      var videoInput = document.getElementById("video");
+
+      var Heading = nameInput.value;
+      var Body = emailInput.value;
+      var image = imageInput.value;
+      var video = videoInput.value;
+
+      // Open a new tab
+      var newTab = window.open();
+
+      // Write the user information in the new tab
+      newTab.document.write("<html>");
+      newTab.document.write("<head>");
+      newTab.document.write("<title>DISPLAY CONTENT</title>");
+      newTab.document.write("<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous' />");
+      newTab.document.write("<style>");
+      newTab.document.write("body {");
+      newTab.document.write("  padding: 100px;");
+      newTab.document.write("  background : linear-gradient(to right,#eecda3,#ba5370)");
+      newTab.document.write("}");
+      newTab.document.write("h1 {");
+      newTab.document.write("  color: #5C469C;");
+      newTab.document.write("  margin-bottom: 10px;");
+      newTab.document.write("  margin-left: 420px;");
+      newTab.document.write("  font-size : 50px;");
+      newTab.document.write("  font-weight : bold");
+      newTab.document.write("  justify-content: center;");
+      newTab.document.write("  align-items: center;");
+      newTab.document.write("}");
+      newTab.document.write("p {");
+      newTab.document.write("  color: #gray;");
+      newTab.document.write("  margin-bottom: 20px;");
+      newTab.document.write("  margin-left: 450px;");
+      newTab.document.write("  font-size : 30px;");
+      newTab.document.write("  font-weight : bold");
+      newTab.document.write("  justify-content: center;");
+      newTab.document.write("  align-items: center;");
+      newTab.document.write("}");
+      newTab.document.write("img {");
+      newTab.document.write("  max-width: 1000px");
+      newTab.document.write("  height: 200px");
+      newTab.document.write("  margin-bottom: 30px;");
+      newTab.document.write("  margin-left: 450px;");
+      newTab.document.write("  margin-bottom: 50px;");
+      newTab.document.write("  justify-content: center;");
+      newTab.document.write("  align-items: center;");
+      newTab.document.write("}");
+      newTab.document.write("video {");
+      newTab.document.write("  max-width: 100%;");
+      newTab.document.write("  height: auto;");
+      newTab.document.write("  margin-bottom: 20px;");
+      newTab.document.write("  margin-bottom: 30px;");
+      newTab.document.write("  margin-left: 450px;");
+      newTab.document.write("  margin-bottom: 50px;");
+      newTab.document.write("  justify-content: center;");
+      newTab.document.write("  align-items: center;");
+      newTab.document.write("}");
+      newTab.document.write("</style>");
+      newTab.document.write("</head>");
+      newTab.document.write("<body>");
+      newTab.document.write("<h1>User Information</h1>");
+      newTab.document.write("<h1>" + Heading + "</h1>");
+      newTab.document.write("<p>" + Body + "</p>");
+      // Check if an image URL is provided
+      if (image) {
+        newTab.document.write("<img src='" + image + "'>");
+      }
+      // Check if a video URL is provided
+      if (video) {
+        newTab.document.write("<video width='560' height='315' controls>");
+        newTab.document.write("<source src='" + video + "' type='video/mp4'>");
+        newTab.document.write("</video>");
+      }
+      newTab.document.write("</body>");
+      newTab.document.write("</html>");                                                                                                                           
+      // Close the document writing to complete the HTML structure
+      newTab.document.close();
+    }
+  </script>
+</body>
+</html>
